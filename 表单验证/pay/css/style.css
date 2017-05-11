@@ -1,0 +1,202 @@
+body {
+  background: #F5F5F5;
+}
+#pay-wrap {
+  width: 100%;
+}
+#pay-wrap .header-bar {
+  width: 100%;
+  height: 44px;
+  background: #fa6702;
+  position: relative;
+}
+#pay-wrap .header-bar h2.title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100%;
+  line-height: 44px;
+  text-align: center;
+  color: #fff;
+}
+#pay-wrap .header-bar .icon-group {
+  height: 44px;
+  padding: 0 5px;
+  display: -webkit-box;
+  -webkit-box-align: center;
+}
+#pay-wrap .header-bar .icon-group.right-icon-group {
+  float: right;
+}
+#pay-wrap .header-bar .icon-group.left-icon-group {
+  float: left;
+}
+#pay-wrap .header-bar .icon-group .icon {
+  display: block;
+  width: 27px;
+  height: 27px;
+  margin: 0 5px;
+}
+#pay-wrap .header-bar .icon-group .icon.back-icon {
+  background: url(../images/title_back.png) no-repeat;
+  background-size: 100%;
+}
+#pay-wrap .pay-content {
+  padding: 20px;
+}
+#pay-wrap .pay-content .step-nav {
+  width: 100%;
+  display: -webkit-box;
+}
+#pay-wrap .pay-content .step-nav a {
+  display: block;
+  -webkit-box-flex: 1;
+  width: 0;
+}
+#pay-wrap .pay-content .step-nav a .line-box {
+  overflow: hidden;
+}
+#pay-wrap .pay-content .step-nav a .line-box span {
+  width: 50%;
+  float: left;
+  height: 4px;
+  display: block;
+  background: #CAC8C4;
+}
+#pay-wrap .pay-content .step-nav a .tip {
+  text-align: center;
+}
+#pay-wrap .pay-content .step-nav a .tip .icon {
+  display: block;
+  width: 28px;
+  height: 35px;
+  margin: 0 auto;
+  background-size: 100%;
+}
+#pay-wrap .pay-content .step-nav a .tip .icon.step-one {
+  background: url(../images/step1Icon.png ) no-repeat;
+}
+#pay-wrap .pay-content .step-nav a .tip .icon.step-two {
+  background: url(../images/step2Icon.png ) no-repeat;
+}
+#pay-wrap .pay-content .step-nav a .tip .icon.step-three {
+  background: url(../images/step3Icon.png ) no-repeat;
+}
+#pay-wrap .pay-content .step-nav a .tip .icon.step-four {
+  background: url(../images/step4Icon.png ) no-repeat;
+}
+#pay-wrap .pay-content .step-nav a .tip span {
+  font-size: 12px;
+  color: #333;
+  line-height: 2;
+}
+#pay-wrap .pay-content .step-nav a.old .line-box span {
+  background: #fa6702;
+}
+#pay-wrap .pay-content .step-nav a.old .tip .icon.step-one {
+  background: url(../images/step1Icon2.png ) no-repeat;
+}
+#pay-wrap .pay-content .step-nav a.old .tip .icon.step-two {
+  background: url(../images/step2Icon2.png ) no-repeat;
+}
+#pay-wrap .pay-content .step-nav a.old .tip .icon.step-three {
+  background: url(../images/step3Icon2.png ) no-repeat;
+}
+#pay-wrap .pay-content .step-nav a.old .tip .icon.step-four {
+  background: url(../images/step4Icon2.png ) no-repeat;
+}
+#pay-wrap .pay-content .step-nav a.on .line-box span:first-child {
+  background: #fa6702;
+}
+#pay-wrap .pay-content .step-nav a.on .tip .icon.step-one {
+  background: url(../images/step1Icon2.png ) no-repeat;
+}
+#pay-wrap .pay-content .step-nav a.on .tip .icon.step-two {
+  background: url(../images/step2Icon2.png ) no-repeat;
+}
+#pay-wrap .pay-content .step-nav a.on .tip .icon.step-three {
+  background: url(../images/step3Icon2.png ) no-repeat;
+}
+#pay-wrap .pay-content .step-nav a.on .tip .icon.step-four {
+  background: url(../images/step4Icon2.png ) no-repeat;
+}
+#pay-wrap .pay-content .step-nav a.on:last-child .line-box span {
+  background: #fa6702;
+}
+#pay-wrap .pay-content .content {
+  width: 100%;
+  margin-top: 30px;
+}
+#pay-wrap .pay-content .content .content-body .form-group {
+  border-radius: 3px;
+  border: 1px solid #CAC8C4;
+  background: #fff;
+}
+#pay-wrap .pay-content .content .content-body .form-group p {
+  height: 40px;
+  width: 100%;
+  line-height: 40px;
+  display: -webkit-box;
+  padding: 0 10px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #CAC8C4;
+  overflow: hidden;
+}
+#pay-wrap .pay-content .content .content-body .form-group p:last-child {
+  border: 0;
+}
+#pay-wrap .pay-content .content .content-body .form-group p input {
+  display: block;
+  -webkit-box-flex: 1;
+  border: 0;
+  outline: none;
+  height: 100%;
+  text-align: right;
+}
+#pay-wrap .pay-content .content .content-body .form-group p label {
+  display: block;
+  font-size: 14px;
+}
+#pay-wrap .pay-content .content .content-body .form-group p label:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background: url(../images/iconN.png) no-repeat 100%;
+  margin-right: 5px;
+}
+#pay-wrap .pay-content .content .content-footer {
+  margin-top: 15px;
+}
+#pay-wrap .pay-content .content .content-footer p {
+  width: 100%;
+  font-size: 12px;
+  overflow: hidden;
+  line-height: 20px;
+  color: #666;
+}
+#pay-wrap .pay-content .content .content-footer p a {
+  color: #00f;
+  font-size: 12px;
+}
+#pay-wrap .pay-content .content .content-footer p output {
+  color: #fa6702;
+}
+#pay-wrap .pay-content .content .content-footer p .right {
+  float: right;
+}
+#pay-wrap .pay-content .content .content-footer p .left {
+  float: left;
+}
+.btn {
+  width: 100%;
+  display: block;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  background: #fa6702;
+  border: 0;
+  border-radius: 3px;
+  margin-top: 15px;
+}

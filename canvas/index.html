@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body{
+			background:pink;
+		}
+		#mycanvas{
+			border:10px solid brown;
+			margin:20px auto;
+			display:block;
+			background:#fff;
+		}
+		#box{
+			width:600px;
+			height:30px;
+			margin:20px auto;
+		}
+		#width,#eraser{
+			width:120px;
+			float:left;
+			height:100%;
+		}
+		#width span,#eraser span{
+			background:#000;
+			margin-right:10px;
+			display:inline-block;
+			border-radius:100%;
+		}
+		#eraser span{
+			background:#fff;
+			border:1px solid #eee;
+		}
+		#background{
+			float:left;
+			width:200px;
+			height:30px;
+		}
+		#background span{
+			width:15px;
+			border:1px solid #ccc;
+			height:100%;
+			diplay:block;
+			float:left;
+			box-sizing: border-box;
+		}
+	</style>
+</head>
+<body>
+	<canvas  id="mycanvas" width="600" height="400"></canvas>
+	<div id="box">
+		<div id="width">
+			<span size="6" style="width:6px;height:6px"></span>
+			<span size="8" style="width:8px;height:8px"></span>
+			<span size="10" style="width:10px;height:10px"></span>
+			<span size="12" style="width:12px;height:12px"></span>
+		</div>
+		<div id="background">
+			<span color="#f00" style="background:#f00"></span>
+			<span color="#0f0" style="background:#0f0"></span>
+			<span color="#00f" style="background:#00f"></span>
+			<span color="#ff0" style="background:#ff0"></span>
+			<span color="#f0f" style="background:#f0f"></span>
+			<span color="#0ff" style="background:#0ff"></span>
+			<span color="#fff" style="background:#fff"></span>
+			<span color="#000" style="background:#000"></span>
+		</div>
+		<div id="eraser">
+			<span size="6" style="width:6px;height:6px"></span>
+			<span size="8" style="width:8px;height:8px"></span>
+			<span size="10" style="width:10px;height:10px"></span>
+			<span size="12" style="width:12px;height:12px"></span>
+		</div>
+	</div>
+		
+	<script>
+		var canvas=document.getElementById('mycanvas'),
+			ctx=canvas.getContext("2d");
+		ctx.lineCap="round";
+		ctx.lineJoin="round";
+		var startX=0,
+			startY=0;
+		var offsetL=canvas.offsetLeft,
+			offsetT=canvas.offsetTop;
+		var flg=false;
+
+		canvas.addEventListener("mousedown",function(e){
+			flg=true;
+			startX=e.pageX;
+			startY=e.pageY;
+			offsetL=canvas.offsetLeft;
+			offsetT=canvas.offsetTop;
+			ctx.beginPath();
+			ctx.moveTo(startX-offsetL,startY-offsetT);
+		},false)
+		canvas.addEventListener("mousemove",function(e){
+			if(!flg) return false;
+			startX=e.pageX;
+			startY=e.pageY;
+			ctx.lineTo(startX-offsetL,startY-offsetT);
+			ctx.stroke();
+		},false)
+		canvas.addEventListener("mouseup",function(){
+			flg=false;
+		},false)
+
+		var width=document.getElementById("width"),
+			spanW=width.querySelectorAll("span");
+		width.addEventListener("click",function(e){
+			var target=e.target
+			var w=target.getAttribute("size");
+			ctx.lineWidth=w;
+		},false)
+		var eraser=document.getElementById("eraser"),
+			spanE=width.querySelectorAll("span");
+		eraser.addEventListener("click",function(e){
+			var target=e.target
+			var w=target.getAttribute("size");
+			ctx.lineWidth=w;
+			ctx.strokeStyle="#fff";
+		},false)
+		var color=document.getElementById("background"),
+			spanC=color.querySelectorAll("span");
+		color.addEventListener("click",function(e){
+			var target=e.target;
+			var c=target.getAttribute("color");
+			console.log(c)
+			ctx.strokeStyle=c;
+		})
+	</script>
+</body>
+</html>

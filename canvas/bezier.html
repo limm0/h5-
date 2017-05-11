@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#mycanvas{
+			display:block;
+			border:1px solid #ccc;
+			margin:0 auto;
+		}
+	</style>
+</head>
+<body>
+	<canvas id="mycanvas" width="500" height="500"></canvas>
+	<script>
+		var canvas=document.getElementById('mycanvas'),
+			ctx=canvas.getContext("2d");
+		
+		ctx.moveTo(100,100);
+		ctx.lineTo(150,200);
+		ctx.lineTo(50,400);
+		ctx.lineTo(200,300);
+		ctx.lineTo(150,150);
+		ctx.strokeStyle="#f00";
+		ctx.stroke();
+		ctx.beginPath();
+		ctx.bezierCurveTo(100,100,150,200,50,400);
+		ctx.quadraticCurveTo(200,300,150,150);
+		ctx.strokeStyle="#0f0";
+		ctx.stroke();
+	</script>
+</body>
+</html>

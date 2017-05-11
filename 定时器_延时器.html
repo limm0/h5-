@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>定时器，延时器</title>
+</head>
+
+<body>
+	<p class='p'></p>
+<button>点击</button>
+
+
+	<!-- <div id="test" style="width:1px;height:17px;background:#0f0;">0%</div>
+    <input type="button" value="Run" id="run"/>
+    <input type="button" value="停止" id="stop"/> -->
+	<script>
+
+
+/*window.requestAnimationFrame =
+   window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame 
+                                || window.msRequestAnimationFrame;
+  var start = null;
+  var ele = document.getElementById("test");
+  var progress = 0;
+  var stop=null;
+ function step() {
+    if(progress>=100) progress=0;
+    progress += 1;
+    ele.style.width = progress + "%";
+    ele.innerHTML=progress + "%";
+    if (progress < 100) {
+        stop=requestAnimationFrame(step);
+    }
+}
+document.querySelector('#run').addEventListener('click',function(){
+	step();
+},false)
+
+document.querySelector('#stop').addEventListener('click',function(){
+	window.cancelAnimationFrame(stop)
+},false)*/
+
+
+	var p=document.querySelector('.p'),
+		btn=document.querySelector('button'),
+		flag=false,i=0;
+
+		function auto(){
+			i++;
+			p.innerHTML=i
+		}
+		window. requestAnimationFrame=function(auto){
+			timer=setInterval(auto,1000)
+		}
+	var timer=setInterval(auto,1000)
+
+		btn.onclick=function(){
+			if(!flag){
+				clearInterval(timer);
+				flag=true
+			}else{
+				timer=setInterval(auto,1000)
+				flag=false
+			}
+			
+		}
+		setTimeout(function(){alert(1)},1000)
+
+
+/*
+	动画进度条 
+
+window.requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+
+var start = null;
+var ele = document.getElementById("test");
+var progress = 0;
+ 
+function step(timestamp) {
+    progress += 1;
+    ele.style.width = progress + "%";
+    ele.innerHTML=progress + "%";
+    if (progress < 100) {
+        requestAnimationFrame(step);
+    }
+}
+requestAnimationFrame(step);
+document.getElementById("run").addEventListener("click", function() {
+    ele.style.width = "1px";
+    progress = 0;
+    requestAnimationFrame(step);
+}, false);
+*/
+
+
+	</script>
+</body>
+</html>

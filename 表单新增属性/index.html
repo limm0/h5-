@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<form id="myform" oninput="this.out.value=this.range.value">
+		<input type="text" name="text" autofocus autocomplete="off" list="list">
+		<datalist id="list">
+			<option>hello</option>
+			<option>world</option>
+		</datalist>
+		<input type="password" name="password">
+		<input type="tel" name="tel">
+		<input type="number" name="number">
+		<input type="email" name="email">
+		<input type="url" name="url">
+		<input type="color" name="color">
+		<input type="date" name="date">
+		<input type="file" name="file">
+		<input type="range" name="range" step="10">
+		<output name="out"></output>
+		<input type="submit" formaction="#aa" formmethod="post">
+		<input type="submit" formaction="#bb">
+	</form>
+	<input type="text" form="myform" name="outIn">
+</body>
+</html>
