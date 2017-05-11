@@ -1,0 +1,184 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+header, nav,
+article, section, main, hgroup, figcaption, footer, aside, dialog, figure, banner {
+  display: block; }
+
+html {
+  font-family: "weiruanyahei","Helvetica Neue",Helvetion,STHeiTi,Arial,sans-serif;
+  -ms-text-size-abjust: 100%;
+  line-height: 1.5;
+  color: #333333;
+  background-color: width;
+  height: 100%;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch; }
+
+a {
+  background: transparent;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  color: #0088cc; }
+
+a:active, a:active {
+  outline: 0;
+  color: #006699; }
+
+body {
+  -webkit-touth-callout: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+img, div, body, html, ul, li, a {
+  -webkit-touch-callout: none;
+  list-style: none; }
+
+a:active, input, button {
+  -webkit-tap-highlight-color: tarnsparent;
+  border: 0;
+  outline: none; }
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #999; }
+
+input {
+  -webkit-appearance: none; }
+
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+
+header {
+  width: 100%;
+  height: 75px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  box-sizing: border-box;
+  background: #F0EEEF;
+  font-size: 1.6rem; }
+  header a {
+    color: #000; }
+    header a:nth-of-type(3) {
+      color: #C8524E; }
+
+banner {
+  display: flex;
+  width: 100%;
+  height: auto; }
+  banner img {
+    width: 100%;
+    height: auto; }
+
+nav {
+  width: 100%;
+  height: 75px;
+  border-bottom: 1px solid #ccc;
+  background: #F0EEEF;
+  display: flex; }
+  nav a {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #C6C6C6;
+    background: url(../images/login/i11.jpg) no-repeat right center; }
+    nav a:last-child {
+      background: none; }
+    nav a:first-child {
+      color: #C8524E; }
+    nav a span {
+      padding: 5px 0; }
+
+section {
+  flex: 1;
+  overflow: scroll; }
+  section ul {
+    width: 96%;
+    height: 44px;
+    border: 1px solid #B6B6B6;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: flex; }
+    section ul li {
+      flex: 1;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      box-sizing: border-box; }
+      section ul li:hover, section ul li:nth-of-type(1) {
+        background: #999999; }
+        section ul li:hover a, section ul li:nth-of-type(1) a {
+          color: #fff; }
+      section ul li:nth-of-type(1) {
+        border-radius: 10px 0 0 10px; }
+      section ul li:nth-of-type(2) {
+        border-left: 1px solid #B6B6B6;
+        border-right: 1px solid #B6B6B6; }
+      section ul li:nth-of-type(3) {
+        border-radius: 0 10px 10px 0; }
+      section ul li a {
+        color: #ABABAB;
+        display: flex; }
+  section ol {
+    width: 80%;
+    height: auto;
+    margin: 0 auto; }
+    section ol li {
+      width: 100%;
+      height: 60px;
+      margin: 10px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px; }
+      section ol li:nth-of-type(1) {
+        background: #99CDFF; }
+      section ol li:nth-of-type(2) {
+        background: #FF3334; }
+      section ol li:nth-of-type(3) {
+        background: #E2E2E2; }
+      section ol li a {
+        color: #fff;
+        justify-content: center;
+        align-items: center;
+        display: flex; }
+        section ol li a span {
+          padding-left: 10px; }
+      section ol li:nth-of-type(3) a {
+        color: #C37C7A; }
+
+footer {
+  width: 100%;
+  height: 74px;
+  border-top: 1px solid #ccc; }
+  footer ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row; }
+    footer ul li {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      footer ul li a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #A5A5A5; }
+        footer ul li a span {
+          padding-top: 5px; }
+
+/*# sourceMappingURL=login.css.map */

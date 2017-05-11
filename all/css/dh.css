@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+header, nav,
+article, section, main, hgroup, figcaption, footer, aside, dialog, figure {
+  display: block; }
+
+html {
+  font-family: "weiruanyahei","Helvetica Neue",Helvetion,STHeiTi,Arial,sans-serif;
+  -ms-text-size-abjust: 100%;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: #333333;
+  background-color: width;
+  height: 100%;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch; }
+
+a {
+  background: transparent;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  color: #0088cc; }
+
+a:active, a:active {
+  outline: 0;
+  color: #006699; }
+
+body {
+  -webkit-touth-callout: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+img, div, body, html, ul, li, a {
+  -webkit-touch-callout: none; }
+
+a:active, input, button {
+  background-color: transparent !important;
+  -webkit-tap-highlight-color: tarnsparent;
+  border: 0;
+  outline: none; }
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #f00; }
+
+input {
+  -webkit-appearance: none; }
+
+div {
+  width: 300px;
+  height: 300px;
+  background: green;
+  opacity: 0.5; }
+
+div {
+  animation: dh 10s linear infinite 2s alternate;
+  text-align: center;
+  line-height: 300px;
+  text-shadow: 2px 2px 3px #ccc;
+  color: #fff;
+  box-shadow: 4px 4px 6px #666;
+  border-radius: 150px;
+  font-size: 8rem;
+  position: relative; }
+
+@keyframes dh {
+  0% {
+    background: green;
+    opacity: 0.8; }
+  20% {
+    background: purpel;
+    opacity: 0.6;
+    left: 10px;
+    top: 30px; }
+  50% {
+    background: blue;
+    opacity: 0.4;
+    transform: rotate(3000deg); }
+  80% {
+    background: pink; }
+  100% {
+    background: green; } }
+
+/*# sourceMappingURL=dh.css.map */

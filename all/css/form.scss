@@ -1,0 +1,126 @@
+*{padding:0; margin:0;}
+
+header,nav, 
+
+article,section,main,hgroup,figcaption,footer,aside,dialog,figure{ 
+
+display:block;}
+
+html{ font-family:"weiruanyahei","Helvetica Neue",Helvetion,STHeiTi,Arial,sans-serif;-ms-text-size-abjust:100%; font-size:1.4rem; 
+
+color:#333333;background-color:width;height:100%; overflow-x:hidden;-webkit-overflow-scrolling:touch;}
+
+a{ background:transparent; text-decoration:none; -webkit-tap-highlight-color:transparent; color:#0088cc;}
+
+a:active,a:active{ outline:0; color:#006699;}
+
+body{-webkit-touth-callout:none;
+     -webkit-user-select:none;
+     -o-user-select:none;
+     -moz-user-select:none;
+     -ms-user-select:none;
+     user-select:none;}
+
+img,div,body,html,ul,li,a{ -webkit-touch-callout:none;}
+
+a:active,input,button{-webkit-tap-highlight-color:tarnsparent;border:0;outline:none;}
+
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder
+{color:#ccc;}
+input{-webkit-appearance:none;}
+
+body,html{
+	background:#2D2D2D;
+}
+
+header{
+	width:100%;
+	height:50px;
+	background:#F5296A;
+	line-height:50px;
+	font-size:26px;
+	text-align:center;
+	position:relative;
+	span{
+		width:16%;
+		height:auto;
+		background:url(../images/form/i1.png) no-repeat;
+		float:right;
+		position:absolute;
+		top:0;
+		right:0;
+		img{
+			padding-top:12px;
+		}
+	}
+}
+
+section>form{
+	width:100%;
+	height:auto;
+	padding:4px 14px 0 14px;
+	box-sizing:border-box;
+	display:-webkit-box;
+	input,button{
+		height:46px;
+		line-height:46px;
+		border:1px solid #000;
+		box-sizing:border-box;
+		border-radius:10px;
+		margin-top:22px;
+
+	}
+	input:nth-child(1),input:nth-child(2){
+		width:100%;
+		height:46px;
+		line-height:46px;
+		border:1px solid #000;
+		font-size:0.8rem;
+		text-indent:4em;
+	}
+	button:nth-child(3){
+		background:#EB165D;
+		font-size:1rem;
+		-webkit-box-flex:1;
+		margin-right:5px;
+	}
+	button:nth-child(4){
+		font-size:1rem;
+		-webkit-box-flex:1;
+		margin-left:5px;
+	}
+
+}
+section>span{
+		position:absolute;
+		color:#999;
+		&:nth-of-type(1){
+			top:86px;
+			left:24px;
+		}
+		&:nth-of-type(2){
+			top:154px;
+			left:24px;
+		}
+	}
+
+
+
+footer{
+	width:100%;
+	height:auto;
+	position:fixed;
+	bottom:0;
+	ul,li{
+		height:auto;
+		width:100%;
+		display:-webkit-box;
+		background:#000;
+		font-size:0.6rem;
+		text-align:center;
+		dl{
+			-webkit-box-flex:1;
+			margin:6px;
+		}
+	}
+}

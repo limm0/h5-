@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+header, nav, article, section, main, hgroup, figcaption, footer, aside, dialog, figure {
+  display: block; }
+
+html {
+  font-family: "weiruanyahei","Helvetica Neue",Helvetion,STHeiTi,Arial,sans-serif;
+  -ms-text-size-abjust: 100%;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: #333333;
+  background-color: width;
+  height: 100%;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch; }
+
+a {
+  background: transparent;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  color: #0088cc; }
+
+a:active, a:active {
+  outline: 0;
+  color: #006699; }
+
+body {
+  -webkit-touth-callout: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+img, div, body, html, ul, li, a {
+  -webkit-touch-callout: none; }
+
+a:active, input, button {
+  background-color: transparent !important;
+  -webkit-tap-highlight-color: tarnsparent;
+  border: 0;
+  outline: none; }
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #f00; }
+
+input {
+  -webkit-appearance: none; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background: #333333; }
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  padding-top: 40%;
+  box-sizing: border-box; }
+
+.wrap > header {
+  width: 100%;
+  height: auto; }
+  .wrap > header img {
+    width: 30%;
+    height: auto;
+    display: block;
+    margin: 2% auto; }
+
+.wrap > p {
+  height: 34px;
+  line-height: 34px;
+  width: 100%;
+  text-align: center;
+  color: #949494;
+  font-size: 28px; }
+
+.wrap > footer {
+  width: 100%;
+  height: auto; }
+  .wrap > footer p {
+    width: 100%;
+    height: 4%;
+    color: #949494;
+    text-align: center;
+    margin: 94% auto 2% auto;
+    box-sizing: border-box; }
+
+/*# sourceMappingURL=bmw.css.map */

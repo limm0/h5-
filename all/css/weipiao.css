@@ -1,0 +1,205 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+header, nav,
+article, section, main, hgroup, figcaption, footer, aside, dialog, figure {
+  display: block; }
+
+html {
+  font-family: "WEIRUANYAHEI","Helvetica Neue",Helvetion,STHeiTi,Arial,sans-serif;
+  -ms-text-size-abjust: 100%;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: #333333;
+  background-color: width;
+  height: 100%;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch; }
+
+a {
+  background: transparent;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  color: #0088cc; }
+
+a:active, a:active {
+  outline: 0;
+  color: #006699; }
+
+body {
+  -webkit-touth-callout: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+img, div, body, html, ul, li, a {
+  -webkit-touch-callout: none;
+  list-style: none; }
+
+a:active, input, button {
+  background-color: transparent !important;
+  -webkit-tap-highlight-color: tarnsparent;
+  border: 0;
+  outline: none; }
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #f00; }
+
+input {
+  -webkit-appearance: none; }
+
+html, body, .wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+
+header {
+  width: 100%;
+  height: 60px;
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 28px 0 20px;
+  box-sizing: border-box; }
+  header a {
+    color: #fff;
+    font-size: 20px; }
+    header a span {
+      box-sizing: border-box; }
+      header a span:first-child {
+        padding-right: 8px; }
+      header a span:nth-child(2) {
+        padding-right: 10px; }
+    header a:nth-child(2) {
+      font-weight: bold; }
+
+nav {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 28px 0 20px;
+  box-sizing: border-box; }
+  nav a:nth-child(2) {
+    border: 1px solid #29CC6D;
+    border-radius: 10px;
+    display: flex;
+    height: 28px;
+    width: 140px;
+    line-height: 28px; }
+    nav a:nth-child(2) span {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #29CC6D; }
+      nav a:nth-child(2) span:first-child {
+        background: #29CC6D;
+        color: #fff;
+        border-radius: 10px 0 0 10px; }
+      nav a:nth-child(2) span:last-child {
+        border-radius: 0 10px 10px 0; }
+  nav a:last-child img {
+    display: flex; }
+
+banner {
+  width: 100%;
+  height: auto; }
+  banner img {
+    width: 100%;
+    height: auto;
+    display: flex; }
+
+.box {
+  flex: 1;
+  overflow-y: scroll; }
+
+section {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap; }
+
+section > dl {
+  width: 25%;
+  height: 148px;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+section > ul {
+  width: 100%;
+  height: auto;
+  padding-top: 18px;
+  background: #F8F8F8; }
+  section > ul li {
+    width: 100%;
+    height: 252px;
+    border-bottom: 1px solid #ccc;
+    background: #fff; }
+    section > ul li dl {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      section > ul li dl dt {
+        flex: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+      section > ul li dl dd {
+        flex: 8;
+        padding-right: 20px; }
+        section > ul li dl dd h2 {
+          font-size: 1.6rem; }
+        section > ul li dl dd p {
+          font-size: 1.2rem;
+          color: #BBBBBB; }
+        section > ul li dl dd p:last-child {
+          position: relative; }
+          section > ul li dl dd p:last-child i {
+            font-style: normal;
+            color: #29CC6D;
+            border: 1px solid #29CC6D;
+            border-radius: 5px;
+            padding: 10px;
+            position: absolute;
+            right: 0;
+            bottom: 0; }
+        section > ul li dl dd p:last-child span:first-child {
+          color: #F7665E;
+          font-size: 1.4rem;
+          padding-right: 10px; }
+        section > ul li dl dd p:last-child span:nth-child(2) {
+          border: 1px solid #A4AECF;
+          border-radius: 5px;
+          margin-left: 10px;
+          padding: 5px; }
+
+footer {
+  width: 100%;
+  height: 80px;
+  border-top: 1px solid #ccc;
+  display: flex; }
+  footer a {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #999999;
+    font-size: 0.8rem; }
+    footer a span {
+      padding-top: 5px; }
+
+/*# sourceMappingURL=weipiao.css.map */
